@@ -1,0 +1,220 @@
+body {
+  background: #f0f0f0; /* gris muy claro neutro */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4a4a4a; /* gris oscuro para texto, suave pero legible */
+  padding: 20px;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #333333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size:x-large;
+}
+
+h3 {
+  margin: 5px;
+  color: #555555;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  background-color: #ffffff; /* blanco limpio */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 50px;
+  border: 1px solid #dddddd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form input,
+form select,
+form button {
+  background-color: #fafafa;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  color: #4a4a4a;
+  outline: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form input::placeholder,
+form select {
+  color: #999999;
+}
+
+form input:focus,
+form select:focus {
+  background-color: #fff;
+  border-color: #666666;
+  color: #333333;
+}
+
+form button {
+  background-color: #4a90e2; /* azul suave */
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form button:hover {
+  background-color: #357ABD;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tablas {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction:row;
+  gap: 30px;
+}
+
+.id-nombre {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  color: #4a4a4a;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+}
+
+.lista {
+  height: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+  border: 1px solid #dddddd;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 1000px
+}
+
+.lista_comprados {
+  height: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+  border: 1px solid #dddddd;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 1200px
+}
+
+.tareas {
+  list-style: none;
+  padding: 0;
+}
+
+.producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  border: none;
+  border-bottom: 2px solid #4a90e2;
+  padding: 5px 15px;
+  font-size: 1rem;
+  color: #4a4a4a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.producto span.completada {
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.producto button {
+  margin-left: 5px;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.precio {
+  font-weight: bold;
+  color: #3a7d44; /* verde moderado */
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 1rem;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.comprar {
+  background-color: #4a90e2;
+  color: #ffffff;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.comprar:hover {
+  background-color: #357ABD;
+}
+
+.eliminar {
+  background-color: #d9534f; /* rojo suave */
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.eliminar:hover {
+  background-color: #b5302b;
+}
+
+.p_stock {
+  background-color: #3a7d44; /* verde más oscuro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 18px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
