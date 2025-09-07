@@ -1,7 +1,8 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage.jsx'
 import PendientesPage from './pages/PendientesPage.jsx'
 import CompradosPage from './pages/CompradosPage.jsx'
+import Carrito from './pages/Carrito.jsx'
 import './App.css'
 import { useState } from 'react'
 
@@ -14,11 +15,10 @@ export default function Apps() {
                     <Route path='/principal' element={<HomePage />}>
                         <Route path='pendientes' element={<PendientesPage />} />
                         <Route path='comprados' element={<CompradosPage />} />
+                        <Route path='carrito' element={<Carrito />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
         </>
     )
 }
-//  element={<CompradosPage Borrar={Borrar} Lista={Lista} setLista={setLista} />}
-// element={<PendientesPage Borrar={Borrar} MarcarStock={MarcarStock} Lista={Lista} setLista={setLista} />}

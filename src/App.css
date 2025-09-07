@@ -1,7 +1,9 @@
 body {
-  background: #f0f0f0; /* gris muy claro neutro */
+  background: #f0f0f0;
+  /* gris muy claro neutro */
   font-family: Arial, Helvetica, sans-serif;
-  color: #4a4a4a; /* gris oscuro para texto, suave pero legible */
+  color: #4a4a4a;
+  /* gris oscuro para texto, suave pero legible */
   padding: 20px;
   margin: 0;
   min-height: 100vh;
@@ -20,7 +22,7 @@ h1 {
   color: #333333;
   margin-bottom: 20px;
   text-align: center;
-  font-size:x-large;
+  font-size: x-large;
 }
 
 h3 {
@@ -30,10 +32,11 @@ h3 {
 }
 
 form {
-  background-color: #ffffff; /* blanco limpio */
+  background-color: #ffffff;
+  /* blanco limpio */
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -70,7 +73,8 @@ form select:focus {
 }
 
 form button {
-  background-color: #4a90e2; /* azul suave */
+  background-color: #4a90e2;
+  /* azul suave */
   color: #ffffff;
   font-weight: 600;
   cursor: pointer;
@@ -92,7 +96,7 @@ form button:hover {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  flex-direction:row;
+  flex-direction: row;
   gap: 30px;
 }
 
@@ -110,7 +114,7 @@ form button:hover {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -125,7 +129,7 @@ form button:hover {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -169,7 +173,8 @@ form button:hover {
 
 .precio {
   font-weight: bold;
-  color: #3a7d44; /* verde moderado */
+  color: #3a7d44;
+  /* verde moderado */
   padding: 4px 8px;
   border-radius: 6px;
   font-size: 1rem;
@@ -197,7 +202,8 @@ button {
 }
 
 .eliminar {
-  background-color: #d9534f; /* rojo suave */
+  background-color: #d9534f;
+  /* rojo suave */
   color: #ffffff;
   transition: background-color 0.3s ease;
 }
@@ -207,7 +213,8 @@ button {
 }
 
 .p_stock {
-  background-color: #3a7d44; /* verde más oscuro */
+  background-color: #3a7d44;
+  /* verde más oscuro */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,5 +223,70 @@ button {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bloque {
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  border-bottom: 2px solid #4a90e2;
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #4a4a4a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bloque span.completada {
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.bloque button {
+  margin-left: 5px;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.packs {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  gap: 20px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.proceso {
+  color: white;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.divProceso {
+  width: 750px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color:crimson;
+  border-radius: 50px;
 }

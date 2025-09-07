@@ -3,7 +3,6 @@ import Item from '../Item';
 import MenuLinks from './MenuLinks';
 
 export default function CompradosPage() {
-    // Desestructuramos todo el mensaje
     const [Lista, setLista, MarcarStock, Borrar] = useOutletContext();
 
     console.log(Lista);
@@ -18,7 +17,6 @@ export default function CompradosPage() {
                             key={producto.id}
                             producto={producto}
                             hec={() => {
-                                // Cambiar comprado desde el estado
                                 const nuevaLista = Lista.map(p =>
                                     p.id === producto.id ? { ...p, comprado: !p.comprado } : p
                                 );

@@ -21,6 +21,11 @@ export default function MenuLinks() {
                         <NavLink to={'/principal/pendientes'}>Pendientes</NavLink>
                     </li>
                 </p>
+                <p>
+                    <li>
+                        <NavLink to={'/principal/carrito'}>Carrito</NavLink>
+                    </li>
+                </p>
             </div>
         </>
     )
